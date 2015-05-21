@@ -8,15 +8,24 @@ nav.navbar.navbar-inverse.navbar-fixed-top
 				span.icon-bar
 			a.navbar-brand(href='#')
 				img(src='images/logo.png')
+				span Frontend Boilerplate
 		.collapse.navbar-collapse#bs-example-navbar-collapse-1
-			ul.nav.navbar-nav.navbar-right
+			ul.nav.navbar-nav
 				li.active
 					a(href='#') 首页
 						span.sr-only /(current)
 				li
 					a(href='#') 安装配置
+				li
+					a(href='#') 代码解析
+						
+			//form.navbar-form.navbar-left(role='search')
+			//	.form-group
+			//		input.form-control(type='text' placeholder='Search')
+			//	button.btn.btn-default(type='submit') Submit
+			ul.nav.navbar-nav.navbar-right
 				li.dropdown
-					a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-expand='false') 技术简介
+					a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-expand='false') 相关资料
 						span.caret
 					ul.dropdown-menu(role='menu')
 						li
@@ -29,12 +38,5 @@ nav.navbar.navbar-inverse.navbar-fixed-top
 							a(href='#') Stylus
 						li
 							a(href='#') CoffeeScript
-				li
-					a(href='#') 代码解析
-						
-			//form.navbar-form.navbar-left(role='search')
-			//	.form-group
-			//		input.form-control(type='text' placeholder='Search')
-			//	button.btn.btn-default(type='submit') Submit
 
 
