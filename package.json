@@ -1,0 +1,51 @@
+{
+  "name": "frontendboilerplate",
+  "version": "0.0.1",
+  "description": "A frontend boilerplate using gulp & coffee-script & jade & stylus.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mutueye/FrontendBoilerplate.git"
+  },
+  "keywords": [
+    "frontend",
+    "boilerplate",
+    "gulp",
+    "coffee-script",
+    "jade",
+    "stylus",
+    "livereload",
+    "nodejs"
+  ],
+  "author": "Mutueye",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/Mutueye/FrontendBoilerplate/issues"
+  },
+  "homepage": "https://github.com/Mutueye/FrontendBoilerplate#readme",
+  "devDependencies": {
+    "browserify": "^10.2.1",
+    "browserify-jade": "^1.0.0",
+    "coffeeify": "^1.1.0",
+    "connect": "^3.3.5",
+    "connect-livereload": "^0.5.3",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.3.0",
+    "gulp-duration": "0.0.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-streamify": "0.0.5",
+    "gulp-stylus": "^2.0.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.4",
+    "jade": "^1.9.2",
+    "serve-static": "^1.9.3",
+    "through": "^2.3.7",
+    "tiny-lr": "^0.1.5",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.1"
+  }
+}
