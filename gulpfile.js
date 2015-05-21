@@ -87,7 +87,6 @@ function bundle(callback) {
 		.on('update', function() {
 			var done = finished(3, function() {
 				triggerLr('all');
-				gutil.log('lrTriggered');
 			});
 			template(done);
 			bundle(done);
@@ -98,7 +97,7 @@ function bundle(callback) {
 		.pipe(source('app.js'))
 		.pipe(duration('Bundling app "' + APP_NAME + '"'))
 			.on('end', function() {
-			console.log(ucfirst(APP_NAME) + ' is ready on http://localhost:' + APP_PORT);
+			gutil.log(ucfirst(APP_NAME) + ' is ready on http://localhost:' + APP_PORT);
 		})
 		.pipe(gulp.dest(setDest('js')))
 		.pipe(run(callback))
