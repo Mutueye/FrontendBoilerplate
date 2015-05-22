@@ -5,8 +5,17 @@ html
 		meta(name='description', content='Welcome')
 		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
 		title Welcome
-		include ../../components/link-style/index
+		link(rel='stylesheet', href='bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet', href='css/index.css')
 	body
-		include ../../components/wx-pic/index
-		include ../../components/nav/index
-		include ../../components/link-js/index
+		#wx_pic
+			img(src = 'images/wx_pic.jpg')
+
+		nav.navbar.navbar-inverse.navbar-fixed-top
+
+		div(id='!/home')
+		div(id='!/test')
+		
+		script(src='js/jquery-1.11.2.min.js')
+		script(src='bootstrap/js/bootstrap.min.js')
+		script(src='js/app.js')

@@ -32,6 +32,7 @@
     "coffeeify": "^1.1.0",
     "connect": "^3.3.5",
     "connect-livereload": "^0.5.3",
+    "cors": "^2.6.0",
     "gulp": "^3.8.11",
     "gulp-autoprefixer": "^2.3.0",
     "gulp-duration": "0.0.0",
@@ -47,5 +48,9 @@
     "tiny-lr": "^0.1.5",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.2.1"
+  },
+  "dependencies": {
+    "bamjs": "^1.0.4",
+    "underscore": "^1.8.3"
   }
 }

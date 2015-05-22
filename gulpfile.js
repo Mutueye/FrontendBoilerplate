@@ -79,16 +79,18 @@ function ucfirst(s) {
 
 // Browserify
 //--------------------------------------------------------------------------------------------------
-function bundle(callback) {
-	var file = './src/apps/' + APP_NAME + '/index.coffee';
+function bundle(callback, extension) {
+	extension = extension || '.coffee';
+	var file = './src/apps/' + APP_NAME + '/index' + extension;
+	var options = { extensions: ['.coffee', '.jade'] }
 
-	watchify(browserify(file))
+	watchify(browserify(file, options))
 		.transform(coffeeify)
+		.transform(jadeify)
 		.on('update', function() {
-			var done = finished(3, function() {
+			var done = finished(2, function() {
 				triggerLr('all');
 			});
-			template(done);
 			bundle(done);
 			style(done);
 		})
@@ -129,7 +131,7 @@ function style(callback) {
 		.pipe(stylus())
 		.pipe(prefix('last 2 versions', { cascade: true }))
 		.pipe(duration('Compiling Stylus for app "' + APP_NAME + '"'))
-		.pipe(gulp.dest(setDest()))
+		.pipe(gulp.dest(setDest('css')))
 		.pipe(run(callback));
 }
 

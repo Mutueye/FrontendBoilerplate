@@ -1,8 +1,11 @@
-class App
-	constructor: ->
-		@sayHello()
+Backbone = require('bamjs/backbone')
+Backbone.$ = $
 
-	sayHello: ->
-		console.log('Hello world !')
-$ ->
-	app = new App()
+App = require('./app')
+Router = require('./router')
+
+window.webapp = app = new App(el: document.body)
+router = new Router(app)
+app.router = router
+
+Backbone.history.start(pushState: false)

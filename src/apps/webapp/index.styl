@@ -1,6 +1,44 @@
+//FONTS
+//--------------------------------------------------------------------------------------
+@font-face
+	font-family 'HelveticaNeueLTPro-ThEx'
+	src url('../font/HelveticaNeueLTPro-ThEx.otf')
+
+//COLORS
+//--------------------------------------------------------------------------------------
+CHOCOLATE = #44423d
+THEME_RED = #ea3530
+GRAY_F5 = #f5f5f5
+GRAY_E3 = #e3e3e3
+GRAY_D6 = #d6d6d6
+GRAY_99 = #999999
+GRAY_66 = #666666
+GRAY_33 = #333333
+
+//MEDIA QUERY
+//--------------------------------------------------------------------------------------
+MOBILE = '(max-width: 768px)'
+SMALL = '(min-width: 768px) and (max-width: 930px)'
+MIDDLE = '(min-width: 992px)'
+WIDER = '(min-width: 1200px)'
+RETINA = '(-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi)'
+
+//COMMON SPACE
+//-----------------------------------------------------------------------------------------
+COMMON_SPACE = 30px
+COMMON_SPACE_MOBILE = 12px
+
+
 body
-	padding-top 70px
+	padding-top 50px
 	font-family arial 'Microsoft Yahei' '微软雅黑' !important
 
-@require '../../components/wx-pic/index'
+#wx_pic
+	margin 0 auto
+	display none
+
+.hidden
+	display none !important
+
 @require '../../components/nav/index'
+@require '../../components/page-home/index'
