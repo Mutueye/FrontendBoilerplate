@@ -9,29 +9,42 @@
 		background-size 25px
 	.banner-title
 		font-family 'HelveticaNeueLTPro-ThEx' !important
-		font-size 80px
-		line-height 100px
+		font-size 60px
+		line-height 70px
 		text-align center
-		color #ffffff
+		color THEME_RED
 		@media MOBILE
 			font-size 30px
 			line-height 40px
 	.banner-info
 		font-size 30px
-		line-height 80px
+		line-height 50px
 		margin 0px
 		text-align center
 		color GRAY_E3
 		@media MOBILE
-			font-size 12px
+			font-size 14px
 			line-height 20px
+	.banner-info2
+		font-size 16px
+		line-height 50px
+		margin 0px
+		text-align center
+		color #ffffff
+		@media MOBILE
+			font-size 10px
+			line-height 20px
+.row
+	@media MOBILE
+		margin 0px -9px
+.col-xs-6, .col-xs-12
+	@media MOBILE
+		padding-left 6px
+		padding-right 6px
 .features
 	margin-top COMMON_SPACE*2
 	@media MOBILE
 		margin-top COMMON_SPACE_MOBILE*2
-	.row
-		@media MOBILE
-			margin 0px -9px
 	.feature-title
 		text-align center
 		font-size 30px
@@ -44,8 +57,52 @@
 		text-align center
 		margin-bottom COMMON_SPACE
 		@media MOBILE
-			font-size 14px
-	.col-xs-6
+			font-size 12px
+			margin-bottom COMMON_SPACE_MOBILE
+
+.section-title
+	margin-top COMMON_SPACE
+	text-align center
+	position relative
+	@media MOBILE
+		margin-top COMMON_SPACE_MOBILE
+	.title-text
+		font-size 30px
+		line-height 60px
 		@media MOBILE
-			padding-left 6px
-			padding-right 6px
+			font-size 20px
+			line-height 40px
+	.title-line
+		position absolute
+		height 1px 
+		width auto
+		left 15px
+		right 15px
+		background-color GRAY_E3
+		bottom 0px
+		@media MOBILE
+			left 12px
+			right 12px
+		.title-line-deco
+			width 100px
+			height 2px
+			position absolute
+			left 50%
+			margin-left -50px
+			background-color THEME_RED
+			.title-line-arrow
+				position absolute
+				width 0
+				height 0
+				border-color transparent
+				border-style solid
+				bottom -5px
+				left 45px
+				border-width 5px 5px 0
+				border-top-color THEME_RED
+.npm-packages
+	margin-top COMMON_SPACE
+	@media MOBILE
+		margin-top COMMON_SPACE_MOBILE
+
+
