@@ -8,6 +8,7 @@ Pages =
 	test: require('../../components/page-test')
 
 Nav = require('../../components/nav')
+Footer = require('../../components/footer')
 
 class Webapp extends View
 	namespace:'app'
@@ -15,8 +16,12 @@ class Webapp extends View
 
 	initialize: ->
 		@nav = new Nav(
-			el: @$('.navbar')
-			parent: @
+			el : @$('.navbar')
+			parent : @
+		)
+		@footer = new Footer(
+			el : @$('#footer')
+			parent : @
 		)
 		@showPage()
 		
